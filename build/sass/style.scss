@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+//variables, typography
+@import "config";
+
+//mixins
+@import "mixins/breakpoints";
+@import "mixins/clearfix";
+@import "mixins/heading";
+@import "mixins/item-img";
+@import "mixins/icon";
+@import "mixins/placeholder";
+@import "mixins/slider-fix";
+
+
+//STYLES
+@import "reset";
+@import "grid";
+@import "base";
+@import "helpers";
+
+//libs
+@import "lib/slick-theme";
+
+
+//components
+@import "components/btn";
+@import "components/btn-to-up";
+@import "components/btn-burger";
+
+
+//modules
+@import "modules/header";
+@import "modules/mobile-menu";
+@import "modules/banner";
+@import "modules/information";
+@import "modules/offers";
+@import "modules/faq";
+@import "modules/footer";
+
+
+
+//layouts
+// @import "layouts/portfolio"

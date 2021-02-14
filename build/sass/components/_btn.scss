@@ -1,0 +1,12 @@
+.btn {
+    display       : inline-block;
+    padding       : 20px 35px;
+    text-transform: uppercase;
+    color         : #fff;
+    font-size     : 16px;
+    font-weight   : 600;
+
+    &--green {
+        background-color: $green-1;
+    }
+}

@@ -1,0 +1,54 @@
+html,
+body {
+  height                  : 100%;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+body {
+  position        : relative;
+  display         : flex;
+  flex-direction  : column;
+  width           : 100vw;
+  max-width       : 100%;
+  background-color: $background-color;
+  font-family     : $font-family;
+  font-size       : $font-size-paragraph;
+  color           : $paragraph-color;
+
+  .wrap {
+    flex: 1 0 auto;
+  }
+}
+
+
+@include heading();
+
+p {
+  font-size  : $font-size-paragraph;
+  line-height: $paragraph-height;
+  color      : $paragraph-color;
+  font-weight: 400;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+li {
+  position       : relative;
+  list-style     : none;
+  text-decoration: none;
+  font-size      : $font-size-paragraph;
+}
+
+.attention {
+  display: none;
+}
+

@@ -1,0 +1,182 @@
+.offers {
+    padding: 30px 0 0 0;
+
+    @include point(def-down) {
+        padding: 24px 0 0 0;
+    }
+
+    &__header {
+        margin-bottom: 80px;
+
+        @include point(md-down) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        text-align   : center;
+
+        @include point(md-down) {
+            text-align: left;
+        }
+    }
+
+    &__description {
+        margin-bottom: 10px;
+        text-align   : center;
+        font-size    : 16px;
+        line-height  : 26px;
+        color        : #0f5167;
+
+        @include point(md-down) {
+            text-align: left;
+        }
+    }
+
+    &__link {
+        display        : block;
+        text-align     : center;
+        font-size      : 14px;
+        color          : #2ea5cd;
+        text-decoration: underline;
+
+        @include point(md-down) {
+            text-align: left;
+        }
+    }
+
+    &__card-wrap {
+        display  : flex;
+        flex-wrap: wrap;
+        margin   : 0 -15px;
+    }
+}
+
+
+.offer {
+    padding   : 40px 20px 40px 26px;
+    width     : calc(33.3% - 30px);
+    margin    : 0 15px 20px 15px;
+    border    : 1px solid #eaeced;
+    box-shadow: 0 7px 11px rgba(0, 0, 0, 0.1);
+
+    @include point(def-md) {
+        width  : calc(50% - 30px);
+        padding: 40px 50px 40px 50px;
+    }
+
+    @include point(md-down) {
+        width  : 100%;
+        padding: 30px 20px 30px 20px;
+
+    }
+
+    &__img-wrap {
+        position     : relative;
+        display      : flex;
+        align-items  : center;
+        margin-bottom: 45px;
+        min-height   : 105px;
+        max-height   : 171px;
+        overflow     : hidden;
+
+        @include point(def-down) {
+            flex-direction: column-reverse;
+            height        : 171px;
+            margin-bottom : 18px;
+        }
+
+        & .img-wrap {
+            display    : flex;
+            align-items: center;
+            height     : 115px;
+        }
+
+        & .offer__img {
+            max-width: 165px;
+
+            &--big {
+                position : absolute;
+                max-width: 100%;
+                top      : 0;
+                bottom   : 0;
+                right    : 0;
+                left     : 0;
+                margin   : auto;
+            }
+
+            &.firm {
+                max-width: 70px;
+
+                @include point(def-down) {
+                    max-width : 54px;
+                    max-height: 40px;
+                }
+            }
+        }
+    }
+
+    &__name {
+        padding    : 0 5px;
+        font-size  : 22px;
+        font-weight: 600;
+        color      : #333333;
+    }
+
+    &__info-list {
+        margin: 0 0 32px 16px;
+
+    }
+
+    &__info-item {
+        position     : relative;
+        margin-bottom: 8px;
+        padding-left : 22px;
+        font-size    : 14px;
+        line-height  : 18px;
+        color        : #333333;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            position  : absolute;
+            content   : '';
+            top       : 0;
+            left      : 0;
+            width     : 12px;
+            height    : 12px;
+            background: url('../img/icons/checkbox-b.svg') no-repeat center / cover;
+
+        }
+    }
+
+    &__price {
+        margin-bottom: 20px;
+        text-align   : center;
+        font-size    : 16px;
+    }
+
+    &__btn-wrap {
+        display    : flex;
+        align-items: center;
+    }
+
+    &__img-logo {
+        @include point(def-down) {
+            display      : flex;
+            align-items  : center;
+            margin-bottom: 20px;
+        }
+    }
+
+    & .btn {
+        display  : block;
+        margin   : 0 auto;
+        padding  : 15px 35px;
+        font-size: 14px;
+    }
+
+}

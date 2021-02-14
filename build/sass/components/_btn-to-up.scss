@@ -1,0 +1,18 @@
+.btn-to-up {
+    position  : absolute;
+    bottom    : 40px;
+    right     : 30px;
+    width     : 52px;
+    height    : 52px;
+    background: $blue-1 url('../img/icons/arrow-up.svg') no-repeat center center;
+    opacity   : .3;
+    cursor    : pointer;
+
+    @include point(md-down) {
+        display: none;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}

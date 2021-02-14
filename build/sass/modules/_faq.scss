@@ -1,0 +1,123 @@
+.faq {
+    padding: 75px 0;
+
+    @include point(def-down) {
+        padding: 10px 0;
+    }
+
+    &__wrap {
+        display   : flex;
+        flex-wrap : wrap;
+        margin-top: 75px;
+
+        @include point(def-down) {
+            margin-top: 50px;
+        }
+    }
+
+    & .left-col,
+    & .right-col {
+        width: 50%;
+
+        @include point(def-down) {
+            width: 100%;
+        }
+    }
+
+
+    & .left-col {
+        padding-right: 15px;
+
+        @include point(def-down) {
+            padding-right: 0;
+        }
+    }
+
+    & .right-col {
+        padding-left: 15px;
+
+        @include point(def-down) {
+            padding-left: 0;
+        }
+    }
+}
+
+
+.question {
+    width     : 100%;
+    max-height: fit-content;
+    margin    : 0 0 30px 0;
+    padding   : 30px 30px 20px 30px;
+    border    : 1px solid #eaeced;
+    box-shadow: 0 7px 11px rgba(0, 0, 0, 0.1);
+    cursor    : pointer;
+
+    @include point(def-md) {
+        margin: 0 0 20px 0;
+    }
+
+    @include point(md-down) {
+        margin    : 0;
+        padding   : 17px 0 17px 0;
+        box-shadow: none;
+        border    : none;
+        border-top: 1px solid #eaeced;
+
+        &:last-child {
+            border-bottom: 1px solid #eaeced;
+        }
+    }
+
+    &.open {
+
+        & .question__title {
+            color: #2ea5cd;
+
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+
+        & .question__description {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    &__title {
+        position     : relative;
+        padding-right: 15px;
+        color        : #404040;
+        line-height  : 120%;
+        font-weight  : 600;
+        transition   : color .3s;
+
+
+        &::after {
+            display    : flex;
+            flex-shrink: 0;
+            content    : '';
+            position   : absolute;
+            top        : calc(50% - 2.5px);
+            right      : 0;
+            width      : 8px;
+            height     : 5px;
+            background : url('../img/icons/arrow-down.svg') no-repeat center / cover;
+
+        }
+    }
+
+    &__description {
+        display           : none;
+        margin-top        : 7px;
+        font-size         : 15px;
+        line-height       : 25px;
+        color             : #000;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition   : opacity 0.3s;
+        -o-transition     : opacity 0.3s;
+        transition        : opacity 0.3s;
+        opacity           : 0;
+
+    }
+}

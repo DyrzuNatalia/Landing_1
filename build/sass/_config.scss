@@ -1,0 +1,97 @@
+//Media breakpoints
+$points: (st: 320,
+        xs: 375,
+        psw: 412,
+        sm: 480,
+        ms: 640,
+        md: 767,
+        def: 1199,
+        lg: 1280,
+        xl: 1366,
+        mg: 1440,
+        hd: 1720,
+        dt: 1980);
+
+// COLORS
+
+$grey-1  : #626061; // text
+$grey-2  : #666666; // fields
+$grey-3  : #4e4e4e;
+$grey-4  : #595656;
+$blue-1  : #006CCF;
+$blue-2  : #e0ecf8;
+$blue-3  : #0f5167; //text
+$blue-4  : #2ea5cd;
+$light-1 : #ffffff; // backgrounds
+$green-1 : #69af52; // buttons
+$yellow : #f5ea8a; // buttons
+
+
+//Font families
+$font-family: 'Poppins', sans-serif;
+$font-style: normal;
+
+//PARAGRAPH STYLES
+$paragraph-margin   : 0; //margin-bottom
+$font-size-paragraph: 16px;
+$paragraph-height   : 140%;
+$paragraph-color    : #000;
+
+//HEADINGS STYLES
+$font-family-headings: $font-family;
+$heading-margin      : 0,
+0,
+0,
+0,
+0,
+0;
+$heading-margin-bottom: 100px;
+$heading-font-size    : 42,
+35,
+32,
+24,
+20,
+18;
+$heading-font-weight: 600,
+600,
+600,
+600,
+600,
+500; // 1 = "normal"(400)
+$heading-uppercase: 0,
+0,
+0,
+0,
+0,
+0; // 0 = "none", 1 = "uppercase"
+$heading-text-align: l,
+l,
+l,
+l,
+l,
+l; // c = "center", l = "left", r = "right"
+
+$heading-font-style: normal;
+
+// MD Heading sizes (prefix from points)
+$md-heading-change: true;
+$md-heading-margin: 0,
+0,
+0,
+0,
+false,
+false;
+$md-heading-font-size: 36,
+30,
+24,
+20,
+18,
+16;
+
+
+$list-image      : false; //list.png
+$background-color: #FBFBFB;
+$link-color      : #000;
+$link-hover-color: #000;
+
+$heading-color: #000;

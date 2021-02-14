@@ -1,0 +1,216 @@
+.footer {
+    position  : relative;
+    padding   : 17px 0 0 0;
+    background: #f6f6f6;
+
+    &__wrap-desctop {
+        display: block;
+
+        @include point(md-down) {
+            display: none;
+        }
+    }
+
+    &__img-link-wrap {
+        width          : 30%;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+
+        @include point(def-down) {
+            width: 100%;
+        }
+    }
+
+    &__img-wrap {
+        width          : 70%;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+
+        @include point(def-down) {
+            width: 100%;
+        }
+    }
+
+    &__wrap-mobile {
+        display: none;
+
+        @include point(md-down) {
+            display: block;
+        }
+
+        & .footer__center {
+            padding: 0;
+
+        }
+
+        & .footer__img-link-wrap {
+            padding        : 20px 0;
+            justify-content: space-between;
+            align-items    : center;
+
+        }
+
+        & .footer__logo {
+            display: block;
+            margin : 0 auto;
+        }
+
+        & .footer__center .footer__img-wrap {
+            padding        : 20px 30px 10px 30px;
+            justify-content: center;
+
+        }
+
+        & .footer__img {
+            max-width: 40px;
+            margin   : 0 6px 10px 6px;
+        }
+
+        & .info {
+            &__wrap {
+                flex-direction: column;
+                align-items   : flex-start;
+                border-bottom : 1px solid #eaeced;
+            }
+
+            &__title {
+                text-align: left;
+            }
+
+            &__list {
+                display       : none;
+                padding-bottom: 10px;
+            }
+
+            &__item {
+                margin-bottom: 4px;
+            }
+
+            &__link {
+                font-size: 12px;
+                color    : #aaaaaa;
+
+                &:hover {
+                    color: #2ea5cd;
+                }
+            }
+
+            &__title {
+                width        : 100%;
+                position     : relative;
+                padding      : 20px 0;
+                margin-bottom: 0;
+
+                &::after {
+                    position  : absolute;
+                    content   : '';
+                    top       : calc(50% - 4px);
+                    right     : 0;
+                    width     : 13px;
+                    height    : 8px;
+                    background: url('../img/icons/arrow-gray.svg') no-repeat center / cover;
+                }
+            }
+
+        }
+
+    }
+
+    &__top {
+        padding: 60px 0;
+
+        @include point(def-down) {
+            padding: 30px 0 10px 0;
+        }
+    }
+
+    &__center {
+        display        : flex;
+        justify-content: space-between;
+        padding        : 30px 0;
+        border-top     : 1px solid #eaeced;
+        border-bottom  : 1px solid #eaeced;
+
+
+        @include point(def-down) {
+            flex-direction: column;
+
+            & .footer__img-link-wrap {
+                justify-content: center;
+                padding-bottom : 20px;
+                border-bottom  : 1px solid #eaeced;
+            }
+
+            & .footer__img-wrap {
+                padding        : 25px 0 0 0;
+                justify-content: space-around;
+            }
+
+            & .footer__img-link {
+                margin: 0 12px;
+            }
+
+        }
+
+
+        & .spaser {
+            width     : 1px;
+            height    : 70px;
+            background: #eaeced;
+            margin    : 0 10px;
+
+            @include point(def-down) {
+                display: none;
+            }
+        }
+    }
+
+    &__bottom {
+        padding  : 30px 0;
+        font-size: 14px;
+        color    : #aaaaaa;
+    }
+
+    &__bottom-title {
+        margin-bottom: 30px;
+        text-align   : center;
+
+    }
+
+    &__bottom-description {
+        font-size  : 11px;
+        line-height: 16px;
+        text-align : center;
+    }
+
+    &__img-link {
+        display    : flex;
+        align-items: center;
+    }
+}
+
+.info {
+
+    @include point(def-md) {
+
+        & .info__item {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        text-align   : center;
+        font-size    : 14px;
+        color        : #2ea5cd;
+
+    }
+
+    &__link {
+        padding  : 5px 0;
+        font-size: 14px;
+        color    : #2ea5cd;
+    }
+}

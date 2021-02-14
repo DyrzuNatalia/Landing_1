@@ -1,0 +1,101 @@
+.header {
+    padding: 30px 0;
+
+    @include point(def-down) {
+        padding: 22px 0;
+    }
+
+
+    & .container {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    &__right-block {
+        display: flex;
+
+        @include point(def-down) {
+            display: none;
+        }
+    }
+
+    &__for-user {
+        display: flex;
+    }
+
+    & .nav-list {
+        margin-right: 30px;
+    }
+
+    & .logo {
+        display: block;
+    }
+}
+
+.logo-img {
+    width : 35px;
+    height: 35px;
+}
+
+.nav-list {
+    display: flex;
+
+
+    &__item {
+        margin-right: 17px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        padding    : 5px 0;
+        color      : $blue-3;
+        font-size  : 15px;
+        font-weight: 500;
+    }
+}
+
+
+
+.separate {
+    margin     : 0 8px;
+    color      : $grey-2;
+    font-size  : 15px;
+    font-weight: 500;
+}
+
+.indentificate {
+
+    &__link {
+        color      : $grey-2;
+        font-size  : 15px;
+        font-weight: 500;
+    }
+}
+
+.login {
+    position    : relative;
+    padding-left: 20px;
+
+    &::before {
+        position  : absolute;
+        content   : '';
+        top       : 0;
+        left      : 0;
+        width     : 13px;
+        height    : 15px;
+        background: url('../img/icons/login.svg') no-repeat center / cover;
+
+    }
+}
+
+.mobile-btn {
+    display: none;
+
+    @include point(def-down) {
+        display: block;
+    }
+}

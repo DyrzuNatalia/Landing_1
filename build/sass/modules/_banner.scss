@@ -1,0 +1,148 @@
+.banner {
+    background: $blue-2;
+
+}
+
+.banner-slide {
+    position: relative;
+    padding : 70px 0;
+    overflow: hidden;
+
+    @include point(def-md) {
+        padding: 50px 0;
+    }
+
+    @include point(md-down) {
+        padding: 18px 0;
+    }
+
+
+
+    &__img-big {
+        position: absolute;
+        top     : 0;
+        right   : 2%;
+        z-index : -1;
+
+        @include point(mg-def) {
+            right: -12%;
+        }
+
+        @include point(def-down) {
+            display: none;
+        }
+
+    }
+
+    &__img-tablet {
+        display : none;
+        position: absolute;
+        z-index : -1;
+
+        @include point(def-md) {
+            display: block;
+            position: absolute;
+            top    : auto;
+            bottom : 0;
+            right  : 8%;
+        }
+
+        @include point(md-down) {
+            display: none;
+        }
+    }
+
+
+    &__title {
+        width        : 57%;
+        margin-bottom: 15px;
+        color        : $blue-3;
+        line-height  : 105%;
+        font-weight  : 700;
+
+        @include point(def-md) {
+            width      : 100%;
+            font-size  : 36px;
+            line-height: 120%;
+        }
+
+        @include point(md-down) {
+            width      : 100%;
+            text-align : center;
+            font-size  : 24px;
+            line-height: 34px;
+        }
+    }
+
+    &__description {
+        width        : 57%;
+        margin-bottom: 30px;
+        color        : $blue-3;
+        font-size    : 22px;
+        line-height  : 120%;
+        font-weight  : 500;
+
+        @include point(def-md) {
+            width    : 70%;
+            font-size: 20px;
+        }
+
+        @include point(md-down) {
+            width     : 100%;
+            font-size : 20px;
+            text-align: center;
+        }
+
+    }
+
+    &__info {
+        width        : 57%;
+        margin-bottom: 40px;
+        font-size    : 20px;
+        color        : $blue-3;
+        line-height  : 130%;
+
+        @include point(def-down) {
+            width      : 50%;
+            font-size  : 16px;
+            line-height: 150%;
+        }
+
+        @include point(md-down) {
+            width: 100%;
+        }
+    }
+
+    &__btn-wrap {
+        display: flex;
+    }
+
+    &__img {
+        display: none;
+
+        @include point(md-down) {
+            display      : block;
+            margin-bottom: 30px;
+
+        }
+    }
+
+    &__postscript {
+
+        font-size: 12px;
+        color    : $grey-4;
+
+        @include point(md-down) {
+            text-align: center;
+        }
+
+    }
+
+    & .btn {
+        margin-bottom: 20px;
+
+        @include point(md-down) {
+            margin: 0 auto 20px auto;
+        }
+    }
+}
